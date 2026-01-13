@@ -24,16 +24,26 @@ Connect the cathode (short leg) of the LED to GND.
 cpp
 Copy
 
+
 void setup() {
+
   pinMode(LED_BUILTIN, OUTPUT); // Initialize the LED pin as an output
+  
 }
 
+
 void loop() {
+
   digitalWrite(LED_BUILTIN, HIGH); // Turn the LED on
+  
   delay(1000);                     // Wait for a second
+  
   digitalWrite(LED_BUILTIN, LOW);  // Turn the LED off
+  
   delay(1000);                     // Wait for a second
+  
 }
+
 
 
 setup(): Runs once when the Arduino starts. Here, we set the LED pin as an output.
